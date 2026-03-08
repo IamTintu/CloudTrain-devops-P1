@@ -1,0 +1,55 @@
+#1 Initialization of Git repo in a folder - 1st time task
+git init
+
+#2 Adding my default branch as "main"
+git branch -M main - 1st time task
+
+#3 Adding public url for project - 1st time task
+git remote add origin https://github.com/axtionable-saas/cloudtrain-devops-p1.git
+
+#4 Adding files in staging area
+git add test-file-1.txt
+git add test-file-2.txt
+
+git add .
+
+#5 Committing the changes to local repo
+git commit -m "I haved added files"
+
+#6 Pushing to Public repo
+git push -u origin main
+
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+
+#7 Viewing branches
+git branch
+
+#8 Create a new branch
+git branch feature/updating-codes
+
+#9 Switching to new branch is called doing a "checkout"
+git checkout feature/updating-codes
+
+#10 after adding codes in local repo
+git add .
+git commit -m "new branch created"
+git push -u origin feature/updating-codes
+
+#11 Directly creating and checking out to a new branch
+git checkout -b feature/updating-codes-1
+
+#12 Doing git pull to pull latest changes from remote repo
+git pull
+
+#12.a Doing git pull to pull latest changes from another branch
+git pull origin main
+
+#13 Stashing changes
+git stash
+
+#14 Popping stashed changes
+git stash pop
+
+#15 merging of branches
+git merge feature/updating-codes
