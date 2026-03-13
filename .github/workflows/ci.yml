@@ -1,8 +1,7 @@
-name:CI # any name is fine
-on:[push] # when my chnages are pushed to main branch, it will trigger the CI
-jobs: #would be doing some steps
-  build:
-  # it will run on ubuntu latest version
+name:CI
+on:[push] 
+jobs: 
+  build:  
     runs-on:ubuntu-latest 
      steps:
       -name: Checkout code
@@ -12,10 +11,5 @@ jobs: #would be doing some steps
       -name :viewing files
       run:cat .github/workflows/ci.yml
 
-      #checking out my branch
-      #listing files
-      #viewing files - below an eg
-      #build my docker image
-      #once the image is created push it to repositor
-      #deploy image into ec2 server
+    
       
