@@ -1,17 +1,12 @@
 name: CI
-
-on: [push] 
-
-jobs: 
-  build:  
-    runs-on:ubuntu-latest 
-     steps:
-      -name: Checkout code
-      uses: actions/checkout@v4
-      -name: viewing file
-      run: ls -la
-      -name: viewing files
-      run: cat TestFile-1.txt
-
-    
-      
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Viewing files
+        run: ls -la
+      - name: viewing files
+        run: cat sop.txt
