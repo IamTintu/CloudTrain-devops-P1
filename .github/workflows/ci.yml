@@ -9,4 +9,4 @@ jobs:
       - name: Viewing files
         run: ls -la
       - name: viewing files
-        run: cat sop.txt
+        run: cat TextFile-1.txt
